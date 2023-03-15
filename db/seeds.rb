@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts "doing some magic......!!!"
+
+20.times do
+  title = Faker::Job.title
+  description = Faker::ChuckNorris.fact
+  Todo.create(title: title, description: description)
+end
+
+puts "done fooling you that its magic"
